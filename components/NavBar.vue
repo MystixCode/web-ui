@@ -18,9 +18,31 @@
     <v-spacer></v-spacer>
     <div v-if="$auth.loggedIn">
       <!-- username -->
-      {{ $auth.user.email }}
-      <!-- logout button -->
-      <v-btn text>Logout</v-btn>
+
+
+
+      <v-menu offset-y>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn dark v-on="on">
+            <v-icon left>mdi-account</v-icon>
+            {{ $auth.user.email }}
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item to="/profile">
+            <v-icon left>mdi-face-profile</v-icon>
+            <v-list-item-title>Profile</v-list-item-title>
+          </v-list-item>
+          <v-list-item to="/profile/settings">
+            <v-icon left class="material-icons">settings</v-icon>
+            <v-list-item-title>Settings</v-list-item-title>
+          </v-list-item>
+          <v-list-item to="/logout">
+            <v-icon left class="material-icons">logout</v-icon>
+            <v-list-item-title>Logout</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </div>
     <div v-else>
       <!-- login link -->

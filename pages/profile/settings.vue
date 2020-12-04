@@ -1,0 +1,22 @@
+<template>
+  <v-container>
+    <h2>Profile Settings</h2>
+    <v-card>
+      <v-card-text class="pt-4">
+        <p>
+          profile Settings page
+        </p>
+
+      </v-card-text>
+    </v-card>
+  </v-container>
+</template>
+
+<script>
+export default {
+  middleware: ['auth']
+}
+</script>
+
+<style lang="scss" scoped>
+</style>

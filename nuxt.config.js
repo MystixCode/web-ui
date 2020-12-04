@@ -50,9 +50,9 @@ export default {
       customStrategy: {
         _scheme: 'local',
         endpoints: {
-          login: { url: 'http://192.168.1.150:8080/auth/login', method: 'post', propertyName: 'token' },
-          logout: { url: 'http://192.168.1.150:8080/auth/logout', method: 'post' },
-          user: { url: 'http://192.168.1.150:8080/api/v1/users/me', method: 'get', propertyName: 'user' }
+          login: { url: 'http://localhost:8080/auth/login', method: 'post', propertyName: 'token' },
+          logout: { url: 'http://localhost:8080/auth/logout', method: 'post' },
+          user: { url: 'http://localhost:8080/api/v1/users/me', method: 'get', propertyName: 'user' }
         },
         //tokenRequired: true,
         tokenType: 'Bearer',
