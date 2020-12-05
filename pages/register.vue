@@ -1,7 +1,17 @@
 <template>
   <v-container>
-    <h2>Register</h2>
+    <v-card>
+      <v-toolbar
+        flat
+        color="primary"
+        dark
+        dense
+      >
+        <v-toolbar-title>Register</v-toolbar-title>
+      </v-toolbar>
+
     <RegisterForm buttonText="Register" :submitForm="registerUser" />
+    </v-card>
   </v-container>
 </template>
 

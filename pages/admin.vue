@@ -1,13 +1,17 @@
 <template>
   <v-container>
-    <h2>Admin</h2>
     <v-card>
+      <v-toolbar
+        flat
+        color="primary"
+        dark
+        dense
+      >
+        <v-toolbar-title>Admin</v-toolbar-title>
+      </v-toolbar>
       <v-card-text class="pt-4">
         <p>
-          Admin Page test
-        </p>
-        <p>
-          Todo maybe create a userlist component and include it here with other components as overview page
+          Todo maybe use this as admin overview page and import components like userlist etc.
         </p>
         <UserList/>
       </v-card-text>

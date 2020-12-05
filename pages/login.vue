@@ -1,7 +1,16 @@
 <template>
   <v-container>
-    <h2>Login</h2>
+    <v-card>
+      <v-toolbar
+        flat
+        color="primary"
+        dark
+        dense
+      >
+        <v-toolbar-title>Login</v-toolbar-title>
+      </v-toolbar>
     <LoginForm buttonText="Login" :submitForm="loginUser" />
+    </v-card>
   </v-container>
 </template>
 

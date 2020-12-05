@@ -28,7 +28,7 @@
             <v-icon left>mdi-face-profile</v-icon>
             <v-list-item-title>Profile</v-list-item-title>
           </v-list-item>
-          <v-list-item to="/profile/settings">
+          <v-list-item to="/settings">
             <v-icon left class="material-icons">settings</v-icon>
             <v-list-item-title>Settings</v-list-item-title>
           </v-list-item>

@@ -1,7 +1,14 @@
 <template>
   <v-container>
-    <h2>Profile</h2>
     <v-card>
+      <v-toolbar
+        flat
+        color="primary"
+        dark
+        dense
+      >
+        <v-toolbar-title>Profile</v-toolbar-title>
+      </v-toolbar>
       <v-card-text class="pt-4">
         <UserLogo/>
         <p>
