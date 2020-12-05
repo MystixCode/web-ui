@@ -5,7 +5,7 @@
       <Nuxt />
     </v-main>
     <v-footer app class="justify-center">
-      <span>logic-programmer.tk &copy; {{ new Date().getFullYear() }}</span>
+      <span>mystixcode.tk &copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>

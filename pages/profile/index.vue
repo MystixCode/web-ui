@@ -3,8 +3,9 @@
     <h2>Profile</h2>
     <v-card>
       <v-card-text class="pt-4">
+        <UserLogo/>
         <p>
-          Welcome {{ $auth.user.email }}! this is your profile page
+          {{ $auth.user.email }}
         </p>
       </v-card-text>
     </v-card>
@@ -12,8 +13,14 @@
 </template>
 
 <script>
+
+import UserLogo from "@/components/UserLogo";
+
 export default {
-  middleware: ['auth']
+  middleware: ['auth'],
+  components: {
+    UserLogo
+  },
 }
 </script>
 
