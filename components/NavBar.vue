@@ -7,12 +7,10 @@
     <v-spacer></v-spacer>
     <!-- home link -->
     <v-btn text to="/">Home</v-btn>
-    <!-- loggedintest link -->
-    <v-btn text to="/loggedintest" v-if="$auth.loggedIn">LoggedInTest</v-btn>
-    <!-- admin link -->
-    <v-btn text to="/admin" v-if="$auth.user && $auth.user.admin">Admin</v-btn>
     <!-- inspire link -->
     <v-btn text to="/inspire">Inspire</v-btn>
+    <!-- admin link -->
+    <v-btn text to="/admin" v-if="$auth.user && $auth.user.admin">Admin</v-btn>
     <!-- about link -->
     <v-btn text to="/about">About</v-btn>
     <v-spacer></v-spacer>

@@ -1,5 +1,5 @@
 export default async function({$auth, redirect}) { //,store
-  let user =$auth.state.user;
+  let user =$auth.$state.user;
   if(user && user.admin) {
     //let the user in
     console.log('Test -> You are admin ok')

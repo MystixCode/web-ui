@@ -9,14 +9,20 @@
         <p>
           Todo maybe create a userlist component and include it here with other components as overview page
         </p>
+        <UserList/>
       </v-card-text>
     </v-card>
   </v-container>
 </template>
 
 <script>
+import UserList from "@/components/UserList"
+
 export default {
-  middleware: ['auth-admin']
+  middleware: ['auth-admin'],
+  components: {
+    UserList
+  }
 }
 </script>
 
