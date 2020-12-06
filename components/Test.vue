@@ -20,7 +20,7 @@
         <!-- dropdown user menu -->
         <v-menu offset-y>
           <template v-slot:activator="{ on, attrs }">
-            <v-btn dark v-on="on">
+            <v-btn v-on="on">
               <v-icon left>mdi-account</v-icon>
               {{ $auth.user.email }}
             </v-btn>
@@ -41,6 +41,23 @@
           </v-list>
         </v-menu>
       </div>
+      <div v-else>
+        <!-- login link -->
+        <v-btn text to="/login">
+          <v-icon left>
+            mdi-login
+          </v-icon>
+          Login
+        </v-btn>
+        <!-- register link -->
+        <v-btn text to="/register">
+          <v-icon left>
+            mdi-account-plus
+          </v-icon>
+          Register
+        </v-btn>
+      </div>
+
 
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="drawer = true"></v-app-bar-nav-icon>
 
