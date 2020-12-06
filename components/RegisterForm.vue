@@ -21,7 +21,6 @@
               />
               <v-layout justify-space-between>
                 <v-btn @click="submitForm(userInfo)" :disabled="!valid">{{ buttonText }}</v-btn>
-                <a href="">Forgot Password</a>
               </v-layout>
             </v-form>
           </v-card-text>

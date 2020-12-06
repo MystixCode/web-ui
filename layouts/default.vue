@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <NavBar />
+    <Test />
+    <!--<NavBar />-->
     <v-main>
       <Nuxt />
     </v-main>
@@ -11,17 +12,21 @@
 </template>
 
 <script>
+import Test from "@/components/Test";
 import NavBar from "@/components/NavBar";
 export default {
-  components: {NavBar},
-  mounted: function() {
-    let elHtml = document.getElementsByTagName('html')[0]
-    elHtml.style.overflowY = 'hidden'
-  },
-  destroyed: function() {
-    let elHtml = document.getElementsByTagName('html')[0]
-    elHtml.style.overflowY = null
+  components: {
+    NavBar,
+    Test
   }
+  //mounted: function() {
+  //  let elHtml = document.getElementsByTagName('html')[0]
+  //  elHtml.style.overflowY = 'hidden'
+  //},
+  //destroyed: function() {
+  //  let elHtml = document.getElementsByTagName('html')[0]
+  //  elHtml.style.overflowY = null
+  //}
 }
 
 
