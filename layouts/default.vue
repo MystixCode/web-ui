@@ -13,6 +13,19 @@
 <script>
 import NavBar from "@/components/NavBar";
 export default {
-  components: {NavBar}
+  components: {NavBar},
+  mounted: function() {
+    let elHtml = document.getElementsByTagName('html')[0]
+    elHtml.style.overflowY = 'hidden'
+  },
+  destroyed: function() {
+    let elHtml = document.getElementsByTagName('html')[0]
+    elHtml.style.overflowY = null
+  }
 }
+
+
+
+
+
 </script>
