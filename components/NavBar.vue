@@ -10,7 +10,7 @@
     <!-- inspire link -->
     <v-btn text to="/inspire">Inspire</v-btn>
     <!-- admin link -->
-    <v-btn text to="/admin" v-if="">Admin</v-btn>
+    <v-btn text to="/admin" v-if="$auth.user && $auth.user.admin">Admin</v-btn>
     <!-- about link -->
     <v-btn text to="/about">About</v-btn>
     <v-spacer></v-spacer>
