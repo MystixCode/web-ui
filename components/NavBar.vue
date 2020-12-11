@@ -20,7 +20,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn dark v-on="on">
             <v-icon left>mdi-account</v-icon>
-            {{ $auth.user.email }}
+            {{ profileInfo.profilename }}
           </v-btn>
         </template>
         <v-list>
@@ -61,9 +61,13 @@
 <script>
 export default {
   name: "NavBar",
-  data: () => ({
-    //login: true
-  })
+  data() {
+    return {
+      profileInfo: {
+        profilename: this.$auth.user.name,
+      }
+    }
+  }
 }
 </script>
 

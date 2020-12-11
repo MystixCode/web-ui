@@ -25,14 +25,15 @@ export default {
     async registerUser(userInfo) {
       try{
         //create new user
-        await this.$axios.post('/users', userInfo)
+        await this.$axios.post('http://192.168.1.150:8080/api/v1/users', userInfo)
         //log in with new user
-        await this.$auth.loginWith('CustomStrategy', {
+        await this.$auth.loginWith('customStrategy', {
           data: userInfo
         })
+        //this.$router.push('/')
         console.log('logged in with new user')
-      } catch {
-        console.log('error creating new user')
+      } catch (e) {
+        console.log('error creating new user', e)
       }
     }
   }

@@ -38,6 +38,7 @@ export default {
       valid: false,
       showPassword: false,
       userInfo: {
+        name: '',
         email: '',
         password: ''
       },

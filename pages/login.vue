@@ -28,7 +28,6 @@ export default {
           data: userInfo
         })
         console.log('logged in ok')
-        this.$router.push('/')
       } catch {
         console.log('login error')
       }

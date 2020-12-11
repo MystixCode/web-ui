@@ -38,8 +38,8 @@ export default {
   data() {
     return {
       profileInfo: { //TODO get values via axios
-        profilename: 'MystixCode',
-        bio: 'The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through.'
+        profilename: this.$auth.user.name,
+        bio: this.$auth.user.bio
       }
     }
   },
